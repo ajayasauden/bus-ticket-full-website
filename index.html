@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bus-ticket</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <button class="js-flight-button" onclick="flight()">Flight</button>
-
-    </nav>
-
-    <script>
-        function flight(){
-             document.querySelector
-             (".js-flight-button").innerHTML='Sachin Khadka'
-        }
-    </script>
-    
+    <main>
+        <div class="ways">
+            
+            <div class="one-way">
+                <input type="radio" class="input-radio" name="trip">
+                <p>one-way</p>
+            </div>
+        
+            
+            <div class="two-way">
+                <input type="radio" class="input-radio" name="trip">
+                <p>Two-way</p>
+            </div>
+            
+            
+        </div>
+        <div class="choose-address">
+            <div>
+                <h4>From</h4>
+                <input type="text" placeholder="Enter city">
+            </div>
+            <div>
+                <h4>To</h4>
+                <input type="text" placeholder="Enter city">
+            </div>    
+            <div>
+                <h4>Date</h4>
+                <input type="date" class="date">
+            </div>       
+        </div>
+    </main>
+<script src="scripts.js"></script>
 </body>
 </html>
 
