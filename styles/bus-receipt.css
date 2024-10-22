@@ -1,0 +1,12 @@
+body{
+  background-color:rgb(172, 239, 217);
+  font-family: arial;
+}
+table,th,td{
+  border:1px solid black;
+  border-collapse: collapse;
+}
+th,td{
+  padding:20px;
+  text-align: left
+}

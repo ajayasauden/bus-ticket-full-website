@@ -4,41 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bus-ticket</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    
 </head>
 <body>
     <main>
-        <div class="ways">
-            
-            <div class="one-way">
-                <input type="radio" class="input-radio" name="trip">
-                <p>one-way</p>
+        <form id="formId"  action=bus-receipt.html>
+            <div>   
+                <input class="input-radio" type="radio" id="oneway" name="trip-type" value="Oneway" class="oneway-button" checked>
+                <label for="oneway">ONE-WAY</label>
+                <input class="input-radio" type="radio" id="twoway" name="trip-type" value="Twoway" class="twoway-button">
+                <label for="twoway">TWO-WAY</label>
             </div>
-        
-            
-            <div class="two-way">
-                <input type="radio" class="input-radio" name="trip">
-                <p>Two-way</p>
+            <div class="choose-address">
+                <div>
+                    <label for="from-city">FROM<br></label>    
+                    <input type="text" id="from-city" name="from-city" placeholder="Enter city" required>
+                </div>
+                <div>
+                    <label for="to-city">TO<br></label>    
+                    <input type="text" id="to-city" name="to-city" placeholder="Enter city" required>
+                </div>    
+                <div>
+                    <label for="date">DATE<br></label>
+                    <input type="date" id="date" class="date-button">
+                </div>     
+                <div>
+                    <label>TRAVELLERS<br></label>
+                    <label for="choose" class="dropdown" ></label>
+                    <select id="choose" name="select-passengers" class="select">
+                        <!--<option class="option" value="1">1</option>
+                    <option class="option" value="2">2</option>
+                    <option class="option" value="3">3</option>
+                    <input type="number">-->
+                    </select>     
+                </div>   
+                <div class="submit">
+                    <button type="submit"  class="arrow-button">
+                        &#8594;
+                    </button>        
+                </div>
             </div>
-            
-            
-        </div>
-        <div class="choose-address">
-            <div>
-                <h4>From</h4>
-                <input type="text" placeholder="Enter city">
-            </div>
-            <div>
-                <h4>To</h4>
-                <input type="text" placeholder="Enter city">
-            </div>    
-            <div>
-                <h4>Date</h4>
-                <input type="date" class="date">
-            </div>       
-        </div>
+        </form>
     </main>
+    
+       
+
+
+
 <script src="scripts.js"></script>
 </body>
 </html>
-

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Bus Data</title>
+    <link rel="stylesheet" href="./styles/mockBusData.css">
+</head>
+<body>
+    <h2>Mock Bus Booking Data</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Trip Type</th>
+                <th>From City</th>
+                <th>To City</th>
+                <th>Date</th>
+                <th>Seats Available</th>
+                <th>Bus Company</th>
+                <th>Departure Time</th>
+                <th>Arrival Time</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="busDataBody">
+            <!-- Mock data will be injected here -->
+        </tbody>
+    </table>
+
+    <script src="mockBusData.js"></script> <!-- Link to your mock data -->
+    <script>
+        // Function to display the mock bus data
+        function displayBusData() {
+            const busDataBody = document.getElementById('busDataBody');
+
+            mockBusData.forEach(bus => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${bus.tripType}</td>
+                    <td>${bus.fromCity}</td>
+                    <td>${bus.toCity}</td>
+                    <td>${bus.date}</td>
+                    <td>${bus.passengers}</td>
+                    <td>${bus.busCompany}</td>
+                    <td>${bus.departureTime}</td>
+                    <td>${bus.arrivalTime}</td>
+                    <td>${bus.price} NPR</td>
+                `;
+                busDataBody.appendChild(row);
+            });
+        }
+
+        // Call the function to display the data
+        displayBusData();
+    </script>
+</body>
+</html>

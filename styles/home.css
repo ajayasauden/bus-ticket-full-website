@@ -1,0 +1,56 @@
+body{
+    font-family: arial;
+    background-color: rgb(172, 239, 217);
+    margin:0;
+    padding:0;
+}
+main{
+    height:200px;
+    background-color: azure;
+    padding:15px;
+    border-radius: 10px;
+    margin-top:20px;
+}
+input{
+    border-color: yellow;
+}
+.input-radio{
+    cursor: pointer;
+}
+h4{
+    margin-bottom: 0px;
+}
+.one-way,
+.two-way{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+}
+.choose-address{
+    display:flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top:10px;
+}
+.submit{
+    position:relative;
+}
+.arrow-button {
+    background-color:green;
+    color: white;
+    padding: 4px 20px;
+    padding-top:1px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer ;
+    position:absolute;
+    bottom:0px;
+}
+.select{
+    padding :2px 36px;
+}
+
+
+
+
+
