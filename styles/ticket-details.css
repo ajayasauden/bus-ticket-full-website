@@ -1,0 +1,23 @@
+.buses{
+    background-color: bisque;
+    border-radius: 20px;
+    padding:15px;
+    margin-top:0;
+    margin-bottom:8px;
+    cursor:pointer;
+}
+.bus-details{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.buses:hover{
+    opacity : 0.7;
+}
+.price,
+.departure,
+.arrival
+ {
+    display: none;
+}

@@ -40,7 +40,8 @@ console.log("Passengers",passengersValue)
 const queryString = `?tripTyp=${tripType}&fromCity=${fromCity}&toCity=${toCity}&tripDate=${tripDate}&passengers=${passengersValue}`;
 
 // Redirect to the next page with the query string
-window.location.href = 'bus-receipt.html' + queryString;
+// window.location.href = 'bus-receipt.html' + queryString;
+window.location.href = 'ticket-details.html' + queryString;
 });
 
 
